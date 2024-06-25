@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head >
+<style>
+    .color-picker{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+</style>
+<body id="display-color"> 
+    <div class="color-picker">
+        <input type="color" id="color-picker" onchange="change()" >
+
+    </div>
+    
+    
+</body>
+<script>
+
+    let change = () =>{
+        let color = document.getElementById("color-picker");
+        document.getElementById("display-color").style.backgroundColor = color.value;
+    }
+
+</script>
+</html>
