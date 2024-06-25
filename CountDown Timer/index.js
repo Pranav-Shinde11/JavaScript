@@ -16,7 +16,7 @@ const second = 1000,
       let now = new Date();
 
       let dd = String(now.getDate()).padStart(2, "0");
-      let mm = String(now.getMonth() + 1).padStart(2, "0")
+      let mm = String(now.getMonth() + 1).padStart(2, "0");
       let yyyy = now.getFullYear();
 
       // console.log(`${dd}/${mm}/${yyyy}`)
